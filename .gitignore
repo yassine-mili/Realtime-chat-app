@@ -33,3 +33,6 @@ logs/
 # Misc
 .cache/
 .parcel-cache/
+
+# txt
+mongo.txt
