@@ -1,67 +1,65 @@
-Real-Time Messaging Platform
+<h1 align="center">✨ Full-Stack Chat App with Auth & Emails ✨</h1>
 
-A modern, full-featured chat application built during my summer internship at 
-Quicktext, demonstrating real-time communication, secure authentication, and 
-cloud integration.
+![Demo App](/frontend/public/screenshot-for-readme.png)
 
-## ✨ Features
+Highlights:
 
-- 🔐 **Secure Authentication**: JWT-based auth with bcrypt password hashing
-- ⚡ **Real-Time Messaging**: Instant message delivery via Socket.IO
-- 🟢 **Online Presence**: Live user online/offline status indicators
-- ⌨️ **Typing Indicators**: Real-time typing notifications
-- 📧 **Email Verification**: Automated welcome emails via Resend API
-- 🖼️ **Media Uploads**: Image sharing with Cloudinary integration
-- 🔔 **Notifications**: Message and typing sound effects (toggle-able)
-- 🛡️ **Rate Limiting**: API protection with Arcjet security layer
-- 🎨 **Modern UI**: Beautiful interface with React, Tailwind CSS & DaisyUI
-- 📱 **Responsive Design**: Works seamlessly on desktop and mobile
+- 🔐 Custom JWT Authentication (no 3rd-party auth)
+- ⚡ Real-time Messaging via Socket.io
+- 🟢 Online/Offline Presence Indicators
+- 🔔 Notification & Typing Sounds (with toggle)
+- 📨 Welcome Emails on Signup (Resend)
+- 🗂️ Image Uploads (Cloudinary)
+- 🧰 REST API with Node.js & Express
+- 🧱 MongoDB for Data Persistence
+- 🚦 API Rate-Limiting powered by Arcjet
+- 🎨 Beautiful UI with React, Tailwind CSS & DaisyUI
+- 🧠 Zustand for State Management
+- 🧑‍💻 Git & GitHub Workflow (branches, PRs, merges)
+- 🚀 Easy Deployment (free-tier friendly with Sevalla)
 
-## 🛠️ Tech Stack
+---
 
-**Frontend:**
-- React with TypeScript
-- Tailwind CSS + DaisyUI
-- Zustand (State Management)
-- Socket.IO Client
+## 🧪 .env Setup
 
-**Backend:**
-- Node.js + Express
-- Socket.IO (WebSocket)
-- MongoDB + Mongoose
-- JWT Authentication
-- Bcrypt (Password Hashing)
+### Backend (`/backend`)
 
-**Cloud Services:**
-- Cloudinary (Image Storage)
-- Resend (Email Service)
-- Arcjet (Rate Limiting)
+```bash
+PORT=3000
+MONGO_URI=your_mongo_uri_here
 
-**DevOps:**
-- Docker
-- CI/CD Pipeline
-- Environment Variables Management
+NODE_ENV=development
 
-## 🚀 Getting Started
+JWT_SECRET=your_jwt_secret
 
-## 📸 Screenshots
+RESEND_API_KEY=your_resend_api_key
+EMAIL_FROM=your_email_from_address
+EMAIL_FROM_NAME=your_email_from_name
 
-## 🎯 Key Learnings
+CLIENT_URL=http://localhost:5173
 
-- Real-time bidirectional communication with Socket.IO
-- Secure authentication flows and token management
-- RESTful API design and best practices
-- Cloud service integration (Cloudinary, Resend)
-- Rate limiting and API security
-- State management in React applications
-- MongoDB schema design for chat applications
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
-## 👤 Author
+ARCJET_KEY=your_arcjet_key
+ARCJET_ENV=development
+```
 
-**Mili Yassine**
-- Portfolio: [yassinemili.me](https://yassinemili.me)
-- LinkedIn: [mili-yassine](https://linkedin.com/in/mili-yassine)
-- GitHub: [@yassine-mili](https://github.com/yassine-mili)
+---
 
-## 📄 License
-MIT License
+## 🔧 Run the Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+## 💻 Run the Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
